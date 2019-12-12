@@ -1,0 +1,263 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Quesha;
+  src: url(Quesha.ttf)
+}
+
+h1 {
+  font-family: Quesha;
+  margin: 0;
+  font-size: 3em;
+}
+
+h2 {
+  font-family: Quesha;
+}
+
+h3 {
+  font-family: Quesha;
+  text-transform: uppercase;
+  margin-left: auto;
+  border: .5em solid #d5bb99;
+  margin-right: auto;
+  border-right-style: none;
+  border-left-style: none;
+  text-align: center;
+  font-size: 2.2em;
+  padding: 10px;
+  width: 70%;
+}
+
+nav a {
+  font-family: sans-serif;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  width: 20%;
+  font-weight: bold;
+  font-size: 1.3em;
+  color: white;
+  padding: .7em;
+}
+
+nav {  
+  text-align: center;
+  background-color: #1b1b1c;
+}
+
+body {
+  margin: 0;
+  background-color: #e7d6c1;
+}
+
+nav a:hover {
+  background-color: #2f2f30;
+}
+
+hr {
+  width: 50%;
+  margin-top: 2em;
+  color: black;
+}
+
+.bkrimg {
+  background-image: url(images/background1.jpg);
+  text-transform: uppercase;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  min-width: 1024px;
+  min-height: 100%;
+  height: 600px;
+  padding-top: 8em;
+  font-size: 1.5em;
+}
+
+
+
+.description p {
+  line-height: 1.2em;
+  font-size: 1.8em;
+  font-family: Quesha;
+  width: 70%;
+  padding: 1em 0 0 2em;
+}
+
+.address {
+  padding-top: 2em;
+  padding-left: 2.3em;
+  margin-bottom: 1em;
+}
+
+
+#description {
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.bgr {
+  font-family: Quesha;
+  font-size: 2em;
+  text-transform: uppercase;
+  background-color: #d5bb99;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+.forms {
+  font-family: Quesha;
+  font-size: 2em;
+  margin-left: 1.1em;
+}
+
+.dropbtn {
+  color: black;
+  font-family: Quesha;
+  width: 2em;
+  font-size: 3em;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: saddlebrown;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  background-color: #efe3d5;
+  display: none;
+  width: 80em;
+  margin: 0;
+  box-shadow: 0px 3px 8px 0px;
+  z-index: 1;
+}
+
+
+.dropdown-content p {
+  font-family: Quesha;
+  font-size: 1.5em;
+  color: black;
+  margin-top: .5em;
+  margin-bottom: 0;
+  text-decoration: none;
+  display: block;
+}
+
+.show {display: block;}
+
+.infop {
+  font-family: Quesha;
+  font-size: 2em;
+  text-align: center;
+}
+
+#cfbns {
+  float: right;
+  margin-right: 2em;
+  border-radius: 50%;
+}
+
+#qstimg {
+  float: right;
+  border-radius: 50%;
+  margin-right: 2em;
+  margin-top: 2em;
+}
+
+input[type=text], select {
+  padding: .5em;
+  border-radius: 5px;
+  width: 30%;
+}
+
+input[type=submit] {
+  width: 20%;
+  padding: .5em;
+  border-radius: 5px;
+  font-family: Quesha;
+  font-size: .7em;
+  font-weight: bold;
+}
+
+textarea {
+  width: 40%;
+  border-radius: 5px;
+}
+
+textarea[placeholder] {
+  font-family: Quesha;
+  font-size: 1em;
+  padding: .2em;
+}
+
+input[type=submit]:hover {
+  background-color: darkgray;
+  cursor: pointer;
+}
+
+table, th, td {
+  font-family: Quesha;
+  font-size: 1.4em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+  border-collapse: collapse;
+  padding: 5px;
+  width: 50%;
+}
+
+tr:nth-child(even) {
+  background-color: #d5bb99;
+}
+
+tr:nth-child(odd) {
+  background-color: #efe3d5;
+}
+
+footer {
+  padding: 1em;
+  background-color: #d5bb99;
+}
+
+/*Media Queries*/
+
+@media only screen and (max-width: 1024px) {
+  .bkrimg {
+    height: 400px;
+    padding-top: 4em;
+  }
+  
+  #cfbns {
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+  }
+  
+  .description p {
+    font-size: 1.7em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+  
+  table, th, td {
+    width: 80%;
+  }
+  
+}

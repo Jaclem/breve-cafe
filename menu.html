@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="cafe.css">
+  <link rel="icon" href="images/logo.jpg" type="image/x-icon">
+</head>
+  <body>
+    <div class="bkrimg">
+      <h1>Breve Cafe</h1>
+      <h2>Take a break with us. You deserve it.</h2>
+      <p>Free WiFi</p>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>&nbsp;
+      <a href="menu.html">Menu</a>&nbsp;
+      <a href="contact.html">Contact</a>&nbsp;
+    </nav>
+    <main>
+      <h3>Try our delicious handcrafted coffees.</h3>
+      <hr>
+      <p class="infop">Click the info button at the bottom of the table for a list of all the ingredients
+      on the menu!
+      </p>
+      
+      <div id="description">
+        <table>
+          <h4 class="bgr">Drink Menu</h4>
+              
+            <tr>
+              <th>Beverage</th>
+              <th>Price</th>
+            </tr>
+
+            <tr>
+              <td>Americano</td>
+              <td>$4.50</td>
+            </tr>
+              
+            <tr>
+              <td>Cafe Latte</td>
+              <td>$5.25</td>
+            </tr>
+              
+            <tr>
+              <td>Red Eye</td>
+              <td>$4.00</td>
+            </tr>
+              
+            <tr>
+              <td>Sm Iced Coffee</td>
+              <td>$3.75</td>
+            </tr>
+              
+            <tr>
+              <td>Lg Iced Coffee</td>
+              <td>$4.75</td>
+            </tr>
+        </table>
+        
+        <table>
+          <h5 class="bgr">Sandwich Menu</h5>
+          
+            <tr>
+              <th>Sandwiches</th>
+              <th>Price</th>
+            </tr>
+          
+            <tr>
+              <td>Turkey Club</td>
+              <td>$7.50</td>
+            </tr>
+              
+            <tr>
+              <td>Ham &amp; Cheese</td>
+              <td>$6.25</td>
+            </tr>
+              
+            <tr>
+              <td>Grilled Cheese</td>
+              <td>$3.00</td>
+            </tr>
+              
+            <tr>
+              <td>Avocado Toast</td>
+              <td>$3.20</td>
+            </tr>
+              
+            <tr>
+              <td>Cuban</td>
+              <td>$7.00</td>
+            </tr>
+          
+        </table>
+        
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">Info</button>
+          <div id="myDropdown" class="dropdown-content">
+            <p><strong>Americano:</strong> 1 Espresso coffee, boiling water, steeamed milk, and a raw sugar cube</p>
+            <p><strong>Cafe Latte:</strong> 1 Espresso shot, 2 shots of Foamed milk, (optional) flavor shot.</p>
+            <p><strong>Red Eye:</strong> a shot or two of espresso mixed with hot water to make a full sized drink.</p>
+            <p><strong>Sm Iced Coffee:</strong> Homemade delicious iced coffee with your choice of flavor shot.</p>
+            <p><strong>Lg Iced Coffee:</strong> </p>
+            <p><strong>Turkey Club:</strong> Mayonnaise, Tomato, White bread, Leaf lettuce, Smoked imported bacon, Golden style Turkey, and Monterey Jack Cheese.</p>
+            <p><strong>Ham &amp; Cheese:</strong> Ham, Cheese, tomato, lettuce, and our secret sauce.</p>
+            <p><strong>Grilled Cheese:</strong> Regular grilled cheese.</p>
+            <p><strong>Avocado Toast:</strong> White toast, avocado, lemon juice, salt, pepper, and extra virgin olive oil.</p>
+            <p><strong>Cuban:</strong> Cuban bread, butter, mustard, ham, pork, swiss cheese, and dill pickles.</p>
+          </div>
+        </div>
+        
+      </div>
+      
+      <div class="address">
+          Breve Cafe<br>
+          20 Parkway Ave<br>
+          San Diego, CA 91901<br>
+          &nbsp;<br>
+          888-555-5555
+      </div>
+    </main>
+    <footer>
+    
+    </footer>
+    
+
+      <script>
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+      </script>
+        
+  </body>
+</html>
